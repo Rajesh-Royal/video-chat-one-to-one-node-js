@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="video-grid"></div>
+
+  <div id="container">
+    <video autoplay="true" id="videoElement">
+
+    </video>
+    <div id="controls">
+        <span class="control-icon">
+            <i class="fa fa-comments"></i>
+        </span>
+        <div class="mid-control">
+            <span class="control-icon">
+                <i class="fa fa-volume-up"></i>
+            </span>
+            <span class="control-icon">
+                <i class="fa fa-microphone"></i>
+            </span>
+            <span class="control-icon">
+                <i class="fa fa-video-camera"></i>
+            </span>
+            <span class="control-icon" style="background: rgb(231, 20, 20); color: white;">
+                <i class="fa fa-phone"></i>
+            </span>
+            
+        </div>
+        <div class="right-control">
+            <span class="control-icon">
+                <i class="fa fa-heart"></i>
+            </span>
+            <span class="control-icon">
+                <i class="fa fa-plus"></i>
+            </span>
+        </div>
+    </div>
+    <div class="self-video" id="self-video">
+      <video autoplay="true" id="videoSelfElement">
+
+      </video>
+    </div>
+</div>
+</body>
+</html>

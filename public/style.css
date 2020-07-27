@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:;
+}
+#videoElement {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgb(27, 27, 27);
+    object-fit: cover;
+}
+#controls{
+    position: absolute;
+    z-index: 4;
+    background: rgba(26, 26, 26, 0.089);
+    height: 60px;
+    width: 100%;
+    bottom: 0%;
+    left: 0;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control-icon{
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-icon .fa{
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.control-icon:hover{
+    transform: scale(1.1);
+}
+.mid-control, .right-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-control .control-icon, .right-control .control-icon{
+    margin: 0px 8px;
+}
+.right-control{
+    margin-right: 20px;
+}
+.right-control .control-icon{
+    background: transparent; 
+    color: rgb(231, 28, 62); 
+}
+.right-control .control-icon .fa{
+    font-size: 30px;
+}
+.right-control .fa-plus{
+    color: white;
+}
+.self-video{
+    width: 20vw;
+    height: 30vh;
+    background: transparent;
+    position: absolute;
+    bottom: 10%;
+    right: 20px;
+    border: 1px dashed white;
+}
+.self-video video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
