@@ -12,6 +12,8 @@ const { v4: uuidV4 } = require('uuid')
 
 const PORT = process.env.PORT || 3000;
 
+console.log("server started at: " + PORT)
+
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
