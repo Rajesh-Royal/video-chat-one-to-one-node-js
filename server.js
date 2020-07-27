@@ -5,10 +5,9 @@ const io = require('socket.io')(server)
 
 
 //peer server for peer to peer connection
-const { PeerServer } = require('peer')
-const peerServer = PeerServer({ port: 65523, path: '/' })
+// const { PeerServer } = require('peer')
+// const peerServer = PeerServer({ port: 65523, path: '/' })
 
-console.log("peer server: " + peerServer);
 
 const { v4: uuidV4 } = require('uuid')
 

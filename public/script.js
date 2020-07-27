@@ -1,9 +1,14 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
-const myPeer = new Peer(undefined, {
-  host: '/',
-  port: "65523"
-})
+
+//it will work on online and localhost we have our own peer server on heroku
+const myPeer = new Peer({host:'peer-server-video-chat.herokuapp.com', secure:true})
+
+//It will work on localhost only
+// const myPeer = new Peer(undefined, {
+//   host: '/',
+//   port: "65523"
+// })
 
 const myVideo = document.getElementById('videoSelfElement');
 myVideo.muted = true
