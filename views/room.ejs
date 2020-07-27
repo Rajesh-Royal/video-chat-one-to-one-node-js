@@ -18,7 +18,7 @@
   <div id="video-grid"></div>
 
   <div id="container">
-    <video autoplay="true" id="videoElement">
+    <video autoplay="true" id="videoElement" poster="videoposter.jpg">
 
     </video>
     <div id="controls">
@@ -27,16 +27,16 @@
         </span>
         <div class="mid-control">
             <span class="control-icon">
-                <i class="fa fa-volume-up"></i>
+                <i class="fa fa-volume-up" id="off-volume"></i>
             </span>
             <span class="control-icon">
-                <i class="fa fa-microphone"></i>
+                <i class="fa fa-microphone" id="off-mic"></i>
             </span>
             <span class="control-icon">
-                <i class="fa fa-video-camera"></i>
+                <i class="fa fa-video-camera" id="off-camera"></i>
             </span>
             <span class="control-icon" style="background: rgb(231, 20, 20); color: white;">
-                <i class="fa fa-phone"></i>
+                <i class="fa fa-phone" id="cancel-call"></i>
             </span>
             
         </div>
@@ -53,6 +53,9 @@
       <video autoplay="true" id="videoSelfElement">
 
       </video>
+      <span class="control-icon hide-video">
+        <i class="fa fa-eye" id="hide-video"></i>
+    </span>
     </div>
 </div>
 </body>
